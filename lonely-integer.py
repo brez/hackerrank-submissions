@@ -1,7 +1,7 @@
 #!/usr/bin/py
 
 
-def lonelyinteger(b):
+def lonely_integer(b):
     for i, val in enumerate(b):
         if val not in b[:i] and val not in b[i+1:]:
             return val
@@ -9,4 +9,4 @@ def lonelyinteger(b):
 if __name__ == '__main__':
     a = int(input())
     b = list(map(int, input().strip().split(" ")))
-    print(lonelyinteger(b))
+    print(lonely_integer(b))
